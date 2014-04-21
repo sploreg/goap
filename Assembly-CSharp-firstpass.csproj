@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B3474BDB-066B-86AF-A610-E7AC5CB52D79}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>F:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>F:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Standard Assets\Scripts\AI\FSM\FSM.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\AI\FSM\FSMState.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\AI\GOAP\GoapAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\AI\GOAP\GoapAgent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\AI\GOAP\GoapPlanner.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\AI\GOAP\IGoap.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\ChopFirewoodAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\ChopTreeAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\DropOffFirewoodAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\DropOffLogsAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\DropOffOreAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\DropOffToolsAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\ForgeToolAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\MineOreAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\PickUpLogsAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\PickUpOreAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Actions\PickUpToolAction.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\BackpackComponent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\ChoppingBlockComponent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\ForgeComponent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\IronRockComponent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Labourers\Blacksmith.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Labourers\Labourer.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Labourers\Logger.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Labourers\Miner.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\Labourers\WoodCutter.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\MovableComponent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\SupplyPileComponent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\ToolComponent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\GameData\TreeComponent.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
