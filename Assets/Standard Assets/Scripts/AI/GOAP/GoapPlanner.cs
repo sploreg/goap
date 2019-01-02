@@ -132,6 +132,9 @@ public class GoapPlanner
 	 */
 	private bool inState(HashSet<KeyValuePair<string,object>> test, HashSet<KeyValuePair<string,object>> state) {
 		bool allMatch = true;
+		if (test.Count < 1) {
+            		return false;
+		}
 		foreach (KeyValuePair<string,object> t in test) {
 			bool match = false;
 			foreach (KeyValuePair<string,object> s in state) {
